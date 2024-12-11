@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font/css/all.min.css">
+</head>
+<style>
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 2.5em;
+    color: #ff0000;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-image {
+    width: 170px;
+    height: 160px;
+    border-radius: 50%;
+    border: 5px solid #ff0000;
+    animation: zoomIn 5s ease-in-out;
+}
+
+.name {
+    font-size: 2em;
+    margin: 10px 0;
+    font-family: freshman;
+    color: red;
+}
+
+.description {
+    font-size: 1.2em;
+    max-width: 600px;
+    font-family: verdana;
+    color: red;
+}
+
+.skills {
+    margin-top: 20px;
+}
+
+.skills h3 {
+    color: #ff0000;
+    margin-bottom: 10px;
+}
+
+.skill-item {
+    list-style: none;
+    padding: 10px;
+    background-color: #222;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.skill-item:hover {
+    transform: scale(1.2);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+</style>
+<body>
+    <header>
+        <div class="logo"><img src="KA.jpg" alt="" id="logo"></div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="port.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+        
+    <aside class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="port.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+        <button id="close-sidebar">Close</button>
+    </aside> 
+    </header>
+    <br><br>
+
+<!-- main banner -->
+<section class="bgimage" id="home">
+<div class="container-fluid">
+    <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+        <h2 class="hero_title">About Me</h2>
+    </div>
+    </div>
+</div>
+</section>
+
+<div class="container">
+    <section class="content">
+        <div class="profile">
+            <img src="KA.jpg" alt="Your Name" class="profile-image">
+            <h2 class="name">Emp Zeez</h2>
+            <p class="description">My real non-alias name is Abdul-Azeez and I'm from a town in Kwara State but I reside at Ikorodu, Lagos State. <br>
+            My date of birth goes thus 20/10/2008. I know I may be young but just give me a chance to prove myself.</p>
+        </div>
+        <div class="skills">
+            <h3>Skills</h3>
+            <ul>
+                <li class="skill-item">HTML</li>
+                <li class="skill-item">CSS</li>
+                <li class="skill-item">JavaScript</li>
+                <li class="skill-item">PHP</li>
+                <li class="skill-item">MySQL</li>
+                <li class="skill-item">CorelDraw</li>
+                <li class="skill-item">Photoshop</li>
+            </ul>
+        </div>
+    </section>
+</div>
+
+
+    <!-- footer section-->
+    <footer id="footer">
+        <div class="container-fluid">
+            <!-- social media icons -->
+            <div class="social-icons mt-4">
+                <a href="https://wa.me/2349160912352?text=Hello%2C%20I%20would%20like%20to%20offer%20you%20a%20job." target="_blank"><li class="fab fa-whatsapp" id="fas"></li></a>
+                <a href="mailto:kamalazeez09@gmail.com?subject=Hello&body=I%20would%20like%20to%20offer%20you%20a%20job." target="_blank"><li class="fas fa-envelope" id="fas"></li></a>
+                <a href="https://twitter.com/EmpZeez" target="_blank"><li class="fab fa-twitter" id="fas"></li></a>
+            </div>
+        </div>
+    </footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
